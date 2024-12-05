@@ -1,0 +1,483 @@
+/* Layout Geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-image {
+    height: 50px;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #f8c12d;
+    color: #ffffff;
+}
+
+/* Efeitos de Hover nos ícones das redes sociais */
+.header-right .icon {
+    margin: 0 5px;
+    color: #007BFF;
+    font-size: 30px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease;
+}
+
+.header-right .icon:hover {
+    transform: scale(1.3); /* Efeito de aumento de tamanho */
+}
+
+/* Efeitos personalizados para as redes sociais */
+.instagram-icon:hover {
+    color: #c13584;
+}
+
+.facebook-icon:hover {
+    color: #4267B2;
+}
+
+.whatsapp-icon:hover {
+    color: #25D366;
+}
+
+/* Seções */
+.section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section h1, .section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Botões */
+.button {
+    background-color: #f8c12d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #f4a261;
+    transform: scale(1.05);
+}
+
+/* Sobre Nós */
+.sobre-nos {
+    background: linear-gradient(120deg, #f8c12d, #f4a261, #007BFF);
+    color: #ffffff;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.about-image {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Níveis de Ensino */
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 2px solid #f8c12d;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #333;
+    font-size: 18px;
+}
+
+/* Calendário e Horário Escolar */
+.calendario-horario {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.calendario-item {
+    text-align: center;
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.calendario-item h2 {
+    color: #333;
+}
+
+.calendario-item p {
+    color: #555;
+}
+
+.calendario-item:hover {
+    transform: scale(1.05);
+    background-color: #f8c12d;
+}
+
+/* Convite para Passeio Virtual */
+#convite-passeio {
+    text-align: center;
+    margin: 20px;
+    background: #f4a261;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.convite-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.convite-image {
+    max-width: 90%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.convite-container p {
+    font-size: 18px;
+}
+
+/* Contate-nos */
+#contate-nos {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.contact-form {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.contact-form button {
+    background-color: #f8c12d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Layout Geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.headerLeft {
+    display: flex;
+    align-items: center;
+}
+
+.logoImage {
+    height: 50px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #f8c12d;
+    color: #ffffff;
+}
+
+.headerRight .icon {
+    margin: 0 5px;
+    color: #007BFF;
+    font-size: 30px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease;
+}
+
+.instagramIcon:hover {
+    color: #c13584;
+}
+
+.facebookIcon:hover {
+    color: #4267B2;
+}
+
+.whatsappIcon:hover {
+    color: #25D366;
+}
+
+.section {
+    padding: 40px 20px;
+    margin: 20px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.aboutContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.aboutText {
+    flex: 1;
+    font-size: 18px;
+    color: #333;
+}
+
+.aboutImage {
+    flex: 1;
+    text-align: center;
+}
+
+.aboutImage img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 2px solid #f8c12d;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.calendarioHorario {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.calendarioItem {
+    text-align: center;
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.calendarioItem:hover {
+    transform: scale(1.05);
+    background-color: #f8c12d;
+}
+
+.conviteContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.conviteImage {
+    max-width: 90%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.contactContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contactInfo {
+    flex: 1;
+}
+
+.contactForm {
+    flex: 1;
+}
+
+.contactForm input,
+.contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.contactForm button {
+    background-color: #f8c12d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contactForm button:hover {
+    background-color: #f4a261;
+    transform: scale(1.05);
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 14px;
+    border-top: 3px solid #f8c12d;
+}
+
+
+
+ 

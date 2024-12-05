@@ -1,0 +1,83 @@
+/* Reset básico */
+* {
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box; /* Define que o preenchimento e as bordas devem ser incluídos nas dimensões totais dos elementos */
+}
+  
+/* Estilo do corpo */
+.body {
+    font-family: Arial, sans-serif; /* Define a fonte do corpo como Arial, com sans-serif como fallback */
+    background-image: url("https://static.vecteezy.com/ti/vetor-gratis/p1/5964669-bem-vindo-de-volta-as-aulas-banner-fundo-materiais-escolares-em-fundo-azul-vetor.jpg"); /* Define a imagem de fundo */
+    color: #fff; /* Define a cor do texto como branco */
+    height: 100vh; /* Define a altura da página como 100% da altura da janela de visualização */
+    display: flex; /* Utiliza o Flexbox para organizar os itens dentro do corpo */
+    justify-content: center; /* Alinha o conteúdo horizontalmente no centro */
+    align-items: center; /* Alinha o conteúdo verticalmente no centro */
+}
+  
+/* Contêiner principal */
+.loginContainer {
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+    width: 100%; /* Define a largura como 100% */
+    max-width: 400px; /* Define a largura máxima do contêiner */
+    padding: 20px; /* Adiciona um preenchimento de 20px dentro do contêiner */
+    background: rgba(255, 255, 255, 0.1); /* Define a cor de fundo como branca com opacidade de 0.1 */
+    border-radius: 10px; /* Arredonda os cantos do contêiner */
+    backdrop-filter: blur(10px); /* Aplica um desfoque no fundo atrás do contêiner */
+}
+  
+/* Título do portal */
+.logo h1 {
+    font-size: 1.8rem; /* Define o tamanho da fonte do título como 1.8rem */
+    font-weight: bold; /* Deixa o título em negrito */
+    margin-bottom: 20px; /* Adiciona um espaço de 20px abaixo do título */
+}
+  
+/* Caixa de login */
+.loginBox h2 {
+    font-size: 1.4rem; /* Define o tamanho da fonte do subtítulo como 1.4rem */
+    margin-bottom: 10px; /* Adiciona um espaço de 10px abaixo do subtítulo */
+}
+  
+/* Grupo de inputs */
+.inputGroup {
+    margin-bottom: 15px; /* Adiciona um espaço de 15px abaixo de cada grupo de input */
+    text-align: left; /* Alinha o texto dos rótulos à esquerda */
+}
+  
+.inputGroup label {
+    display: block; /* Define os rótulos como blocos para que ocupem a linha inteira */
+    font-size: 0.9rem; /* Define o tamanho da fonte do rótulo como 0.9rem */
+    margin-bottom: 5px; /* Adiciona um espaço de 5px abaixo do rótulo */
+}
+  
+.inputGroup input {
+    width: 100%; /* Faz com que o input ocupe 100% da largura disponível */
+    padding: 10px; /* Adiciona um preenchimento de 10px dentro do input */
+    font-size: 1rem; /* Define o tamanho da fonte dentro do input */
+    border: none; /* Remove a borda padrão do input */
+    border-radius: 5px; /* Adiciona bordas arredondadas ao input */
+}
+  
+.inputGroup input:focus {
+    outline: none; /* Remove a borda de foco padrão do input */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.8); /* Adiciona uma sombra de foco azul ao redor do input quando ele está focado */
+}
+  
+/* Botão de login */
+.btn {
+    width: 100%; /* Faz com que o botão ocupe 100% da largura disponível */
+    padding: 10px; /* Adiciona um preenchimento de 10px dentro do botão */
+    background-color: #004085; /* Define a cor de fundo do botão como azul escuro */
+    color: #fff; /* Define a cor do texto dentro do botão como branco */
+    font-size: 1rem; /* Define o tamanho da fonte dentro do botão */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 5px; /* Adiciona bordas arredondadas ao botão */
+    cursor: pointer; /* Define o cursor como pointer ao passar o mouse sobre o botão */
+    transition: background 0.3s; /* Define uma transição suave de 0.3s para a mudança de cor de fundo */
+}
+  
+.btn:hover {
+    background-color: #003766; /* Muda a cor de fundo do botão para um tom de azul mais escuro ao passar o mouse */
+}

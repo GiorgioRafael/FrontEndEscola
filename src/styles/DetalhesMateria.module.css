@@ -1,0 +1,226 @@
+/* Reset básico - Remove margens, paddings e define box-sizing como border-box para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte da página */
+    background-color: #f4f7f8; /* Cor de fundo */
+    color: #333; /* Cor do texto */
+    line-height: 1.6; /* Espaçamento entre as linhas de texto */
+}
+
+/* Cabeçalho fixo */
+.header {
+    position: fixed; /* Fixa o cabeçalho no topo da página */
+    top: 0; /* Posiciona o cabeçalho no topo */
+    left: 0; /* Posiciona no lado esquerdo */
+    width: 100%; /* Largura total */
+    display: flex; /* Usa o modelo flexbox */
+    justify-content: space-between; /* Espaçamento igual entre os itens do cabeçalho */
+    align-items: center; /* Alinha verticalmente os itens */
+    padding: 1rem 2rem; /* Preenchimento interno */
+    background-color: #eef6f8; /* Cor de fundo do cabeçalho */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+}
+
+/* Lado esquerdo do cabeçalho (logo e nome) */
+.headerLeft {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Espaçamento entre a logo e o texto */
+}
+
+.logoImage {
+    width: 40px; /* Tamanho da imagem */
+    height: 40px;
+    object-fit: contain; /* Mantém a proporção da imagem */
+}
+
+.logoText {
+    font-size: 1.8rem; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    color: #003d73; /* Cor do texto */
+}
+
+/* Menu de navegação */
+.menu {
+    display: flex;
+    gap: 2rem; /* Espaçamento entre os itens do menu */
+}
+
+.menu a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #003d73; /* Cor do texto */
+    font-weight: 500; /* Peso da fonte */
+    padding: 0.5rem 1rem; /* Preenchimento interno */
+    border-radius: 5px; /* Borda arredondada */
+    transition: background-color 0.3s; /* Transição suave na mudança de cor */
+}
+
+.menu a:hover {
+    background-color: #FFA500; /* Cor de fundo ao passar o mouse */
+    color: white; /* Cor do texto ao passar o mouse */
+}
+
+/* Lado direito do cabeçalho (ícones de redes sociais) */
+.headerRight {
+    display: flex;
+    gap: 1rem; /* Espaçamento entre os ícones */
+}
+
+.icon {
+    font-size: 1.5rem; /* Tamanho do ícone */
+    color: #003d73; /* Cor inicial dos ícones */
+    transition: color 0.3s; /* Transição suave na mudança de cor */
+}
+
+.instagramIcon:hover {
+    color: #c13584; /* Cor ao passar o mouse no Instagram */
+}
+
+.facebookIcon:hover {
+    color: #4267B2; /* Cor ao passar o mouse no Facebook */
+}
+
+.whatsappIcon:hover {
+    color: #25D366; /* Cor ao passar o mouse no WhatsApp */
+}
+
+/* Espaçamento do conteúdo devido ao menu fixo */
+.content {
+    margin-top: 100px; /* Ajuste para o conteúdo não ficar coberto pelo cabeçalho fixo */
+    padding: 2rem; /* Preenchimento interno */
+}
+
+/* Seções principais (topo e rodapé) */
+.topSection,
+.bottomSection {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se ajustem em várias linhas */
+    gap: 1rem; /* Espaçamento entre os itens */
+}
+
+/* Estilo dos cartões */
+.card {
+    background-color: #eef6f8; /* Cor de fundo dos cartões */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 1rem; /* Preenchimento interno */
+    margin: 0.5rem; /* Espaçamento entre os cartões */
+    flex: 1; /* Faz o cartão ocupar o mesmo espaço */
+    min-width: 250px; /* Largura mínima do cartão */
+    overflow: hidden; /* Esconde o conteúdo que exceder o limite do cartão */
+    text-overflow: ellipsis; /* Adiciona reticências se o conteúdo for muito grande */
+    word-wrap: break-word; /* Quebra palavras longas */
+}
+
+.largeCard {
+    flex: 1.5; /* Cartão maior ocupa mais espaço */
+}
+
+.card h3 {
+    color: #003d73; /* Cor do título do cartão */
+    margin-bottom: 1rem; /* Espaçamento abaixo do título */
+}
+
+.card p {
+    margin: 0.5rem 0; /* Espaçamento entre os parágrafos */
+}
+
+/* Botões */
+.btnYellow {
+    background-color: #ffcb05; /* Cor de fundo do botão */
+    color: #003d73; /* Cor do texto do botão */
+    border: none; /* Remove a borda */
+    padding: 0.5rem 1rem; /* Preenchimento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor em forma de mão ao passar o mouse */
+    font-weight: bold; /* Negrito no texto do botão */
+    transition: background-color 0.3s; /* Transição suave na mudança de cor */
+}
+
+.btnYellow:hover {
+    background-color: #ffc107; /* Cor de fundo ao passar o mouse */
+}
+
+/* Tabela */
+table {
+    width: 100%; /* Largura total */
+    border-collapse: collapse; /* Remove o espaçamento entre as células */
+    margin-top: 1rem; /* Espaçamento acima da tabela */
+}
+
+table th,
+table td {
+    text-align: left; /* Alinha o texto à esquerda */
+    padding: 0.5rem; /* Preenchimento interno */
+    border-bottom: 1px solid #ccc; /* Linha abaixo das células */
+}
+
+table th {
+    background-color: #003d73; /* Cor de fundo das células de cabeçalho */
+    color: white; /* Cor do texto nas células de cabeçalho */
+}
+
+/* Estilo para os status nas células da tabela */
+table td.status {
+    font-weight: bold; /* Negrito */
+}
+
+/* Status específico nas células */
+table td.status.pending {
+    color: #ff9800; /* Laranja para 'Pendente' */
+}
+
+table td.status.late {
+    color: #d32f2f; /* Vermelho para 'Atrasado' */
+}
+
+table td.status.delivered {
+    color: #388e3c; /* Verde para 'Entregue' */
+}
+
+table td.status.lost {
+    color: #757575; /* Cinza para 'Perdido' */
+}
+
+/* Estilos para notas */
+.grades {
+    display: flex;
+    justify-content: space-around; /* Espaçamento igual entre os itens */
+    align-items: center; /* Alinha os itens verticalmente */
+    gap: 1rem; /* Espaçamento entre os itens */
+}
+
+.grades div {
+    background-color: #ffffff; /* Cor de fundo dos itens */
+    border: 1px solid #ccc; /* Borda de 1px */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 0.5rem 1rem; /* Preenchimento interno */
+    text-align: center; /* Alinha o texto ao centro */
+    min-width: 70px; /* Largura mínima */
+    max-width: 100%; /* Largura máxima */
+    overflow: hidden; /* Esconde o conteúdo que excede o limite */
+    word-wrap: break-word; /* Quebra palavras longas */
+}
+
+.grades div p {
+    margin: 0.5rem 0; /* Espaçamento entre os parágrafos */
+    color: #003d73; /* Cor do texto */
+    font-size: 0.85rem; /* Tamanho da fonte */
+    word-wrap: break-word; /* Quebra palavras longas */
+}
+
+/* Rodapé */
+.footer {
+    margin-top: 2rem; /* Espaçamento acima do rodapé */
+    padding: 1rem; /* Preenchimento interno */
+    background-color: #003d73; /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto do rodapé */
+    text-align: center; /* Alinha o texto ao centro */
+}
